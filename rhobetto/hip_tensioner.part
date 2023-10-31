@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "326c7618f048bbd5c9f71f42",
+    "documentMicroversion": "2ea2eb9c06369ebe719e3d26",
+    "elementId": "c32df6c20970d819e585003a",
+    "fullConfiguration": "default",
+    "id": "M8nmK+1zX4EgKJxVX",
+    "isStandardContent": false,
+    "name": "hip_tensioner <1>",
+    "partId": "JHD",
+    "suppressed": false,
+    "type": "Part"
+}

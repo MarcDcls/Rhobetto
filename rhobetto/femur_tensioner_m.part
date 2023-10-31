@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "326c7618f048bbd5c9f71f42",
+    "documentMicroversion": "2ea2eb9c06369ebe719e3d26",
+    "elementId": "cfaa03d389fa076bdcf33c75",
+    "fullConfiguration": "default",
+    "id": "MlBWYxdgsHECPuPey",
+    "isStandardContent": false,
+    "name": "femur_tensioner_M <1>",
+    "partId": "JTD",
+    "suppressed": false,
+    "type": "Part"
+}

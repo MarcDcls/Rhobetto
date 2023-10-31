@@ -1,0 +1,33 @@
+{
+    "documentId": "326c7618f048bbd5c9f71f42",
+    "versionId": "6137920a03e626f5149ddbe8",
+    "assemblyName": "rhobetto",
+    "robotName": "rhobetto",
+    "outputFormat": "urdf",
+
+    "whitelist": [
+        "inner_pelvis",
+        "outer_pelvis",
+        "reinforcement",
+        "hip",
+        "motor_pulley",
+        "hip_pulley",
+        "inner_left_femur",
+        "middle_left_femur",
+        "outer_left_femur",
+        "left_femur_cover",
+        "inner_right_femur",
+        "middle_right_femur",
+        "outer_right_femur",
+        "right_femur_cover",
+        "knee_ankle_pulley",
+        "left_outer_tibia",
+        "left_inner_tibia",
+        "right_outer_tibia",
+        "right_inner_tibia",
+        "inner_ankle",
+        "outer_ankle",
+        "foot",
+        "weight"
+    ]
+}
