@@ -1,9 +1,10 @@
 {
     "documentId": "326c7618f048bbd5c9f71f42",
-    "versionId": "6137920a03e626f5149ddbe8",
+    "versionId": "e5c5f1939b10cd80c264df88",
     "assemblyName": "rhobetto",
     "robotName": "rhobetto",
     "outputFormat": "urdf",
+    "drawFrames": false,
 
     "whitelist": [
         "inner_pelvis",
