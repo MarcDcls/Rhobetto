@@ -1,0 +1,414 @@
+[1m* Checking OpenSCAD presence...[0m
+[1m* Checking MeshLab presence...[0m
+
+[1m* Retrieving workspace ID ...[0m
+[32m+ Using workspace id: 085260104f7529d4aa44dfd3[0m
+
+[1m* Retrieving elements in the document, searching for the assembly...[0m
+[32m+ Found assembly, id: 6f8aa33372eceae3daea128b, name: "rhobetto"[0m
+
+[1m* Retrieving assembly "rhobetto" with id 6f8aa33372eceae3daea128b[0m
+
+[1m* Getting assembly features, scanning for DOFs...[0m
+[32m+ Found DOF: left_hip_yaw [2m(revolute)[-1.571: 1.571][0m
+[32m+ Found DOF: right_hip_yaw [2m(revolute)[-1.571: 1.571][0m
+[32m+ Found DOF: left_hip_pitch [2m(revolute)[-0.262: 1.658][0m
+[32m+ Found DOF: right_hip_pitch [2m(revolute)[-1.658: 0.262][0m
+[33mWARNING: joint dof_left_hip_roll_1 of type revolute has no limits [0m
+[32m+ Found DOF: left_hip_roll_1 [2m(revolute)[0m
+[32m+ Found DOF: left_hip_roll_2 [2m(revolute)[-1.047: 0.175][0m
+[33mWARNING: joint dof_right_hip_roll_1 of type revolute has no limits [0m
+[32m+ Found DOF: right_hip_roll_1 [2m(revolute)[0m
+[32m+ Found DOF: right_hip_roll_2 [2m(revolute)[-0.175: 1.047][0m
+[33mWARNING: joint dof_left_knee_1 of type revolute has no limits [0m
+[32m+ Found DOF: left_knee_1 [2m(revolute)[0m
+[32m+ Found DOF: left_knee_2 [2m(revolute)[-2.356: 0.0][0m
+[33mWARNING: joint dof_right_knee_1 of type revolute has no limits [0m
+[32m+ Found DOF: right_knee_1 [2m(revolute)[0m
+[32m+ Found DOF: right_knee_2 [2m(revolute)[0.0: 1.571][0m
+[33mWARNING: joint dof_left_ankle_pitch_1 of type revolute has no limits [0m
+[32m+ Found DOF: left_ankle_pitch_1 [2m(revolute)[0m
+[32m+ Found DOF: left_ankle_pitch_2 [2m(revolute)[-1.238: 1.571][0m
+[33mWARNING: joint dof_left_ankle_pitch_3 of type revolute has no limits [0m
+[32m+ Found DOF: left_ankle_pitch_3 [2m(revolute)[0m
+[32m+ Found DOF: left_ankle_pitch_4 [2m(revolute)[-1.238: 1.571][0m
+[33mWARNING: joint dof_right_ankle_pitch_1 of type revolute has no limits [0m
+[32m+ Found DOF: right_ankle_pitch_1 [2m(revolute)[0m
+[32m+ Found DOF: right_ankle_pitch_2 [2m(revolute)[-1.571: 1.238][0m
+[33mWARNING: joint dof_right_ankle_pitch_3 of type revolute has no limits [0m
+[32m+ Found DOF: right_ankle_pitch_3 [2m(revolute)[0m
+[32m+ Found DOF: right_ankle_pitch_4 [2m(revolute)[-1.238: 1.571][0m
+[32m+ Found DOF: left_ankle_roll [2m(revolute)[-0.175: 0.524][0m
+[32m+ Found DOF: right_ankle_roll [2m(revolute)[-0.524: 0.175][0m
+[32m[1m* Found total 22 DOFs[0m
+
+[1m* Building robot tree[0m
+[1m* Trunk is pelvis <1>[0m
+[34m[1m* Adding top-level instance [pelvis <1>][0m
+[32m- Adding part Bearing 32005 <2>[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 32005 <1>[2m / ignoring visual and collision[0m
+[32m+ Adding part pelvis <1>[0m
+[34m[1m* Adding top-level instance [left_upper_hip <1>][0m
+[32m+ Adding part bearing_cover_1 <1>[0m
+[32m+ Adding part bearing_cover_1 <2>[0m
+[32m+ Adding part RMD_X6 <1>[0m
+[32m+ Adding part upper_hip_4 <1>[0m
+[32m+ Adding part upper_hip_2 <1>[0m
+[32m+ Adding part upper_hip_1 <1>[0m
+[32m+ Adding part upper_hip_3 <1>[0m
+[34m[1m* Adding top-level instance [motor_pulley <4>][0m
+[32m- Adding part screw M3 <3>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m+ Adding part motor_pulley <1>[0m
+[32m- Adding part screw M3 <1>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <6>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part DIN-6325 3mm <1>[2m (configuration: List_QxFefFY61iTC1i=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <4>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <2>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <5>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [left_lower_hip <1>][0m
+[32m+ Adding part inner_hip <1>[0m
+[32m+ Adding part RMD_X6 <1>[0m
+[34m[1m* Adding top-level instance [left_femur <1>][0m
+[32m- Adding part screw M2.5 <22>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <8>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <6>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <1>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part nut M3 <4>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <21>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <16>[2m (configuration: List_INKdgXXdT7e5Nj=_10)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <15>[2m (configuration: List_INKdgXXdT7e5Nj=_10)[2m / ignoring visual and collision[0m
+[32m- Adding part nut M3 <2>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <5>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part femur_thread <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <18>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <6>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <14>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <20>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <9>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <8>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part nut M3 <3>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <11>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <13>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part reinforcement <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <1>[2m (configuration: List_INKdgXXdT7e5Nj=_10)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <12>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <3>[2m (configuration: List_INKdgXXdT7e5Nj=_10)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <4>[2m (configuration: List_INKdgXXdT7e5Nj=_10)[2m / ignoring visual and collision[0m
+[32m+ Adding part bearing_cover_1 <2>[0m
+[32m- Adding part washer <10>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part motor_support <1>[2m / ignoring visual and collision[0m
+[32m+ Adding part outer_femur <1>[0m
+[32m- Adding part screw M2.5 <19>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <7>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m+ Adding part bearing_cover_2 <1>[0m
+[32m- Adding part Bearing 6804-2RS <3>[2m / ignoring visual and collision[0m
+[32m- Adding part knee_shaft <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <2>[2m (configuration: List_INKdgXXdT7e5Nj=_10)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <17>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m- Adding part nut M3 <1>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <4>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 6804-2RS <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <5>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m+ Adding part outer_hip <1>[0m
+[32m- Adding part washer <9>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m+ Adding part RMD_X6 <1>[0m
+[32m- Adding part screw M2.5 <10>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m+ Adding part inner_femur <1>[0m
+[32m- Adding part washer <2>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 6804-2RS <2>[2m / ignoring visual and collision[0m
+[32m+ Adding part RMD_X6 <2>[0m
+[32m- Adding part washer <7>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <3>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [motor_pulley <1>][0m
+[32m- Adding part screw M3 <2>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m+ Adding part motor_pulley <1>[0m
+[32m- Adding part DIN-6325 3mm <1>[2m (configuration: List_QxFefFY61iTC1i=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <3>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <1>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <5>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <6>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <4>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [left_tibia <1>][0m
+[32m- Adding part DIN-6325 3mm <1>[2m (configuration: List_QxFefFY61iTC1i=_6)[2m / ignoring visual and collision[0m
+[32m- Adding part nut M2.5 <2>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <4>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <9>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m+ Adding part outer_knee_pulley <1>[0m
+[32m+ Adding part inner_tibia <1>[0m
+[32m- Adding part washer <9>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <11>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part nut M2.5 <1>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <4>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part ankle_thread <1>[2m / ignoring visual and collision[0m
+[32m- Adding part nut M2.5 <3>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <10>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <8>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part half_inner_knee <1>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <7>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <5>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m+ Adding part outer_knee_2 <2>[0m
+[32m- Adding part Bearing 6802-2RS <2>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <7>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <5>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <10>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part half_inner_knee <2>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <3>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m+ Adding part outer_knee_1 <1>[0m
+[32m- Adding part nut M3 <1>[2m / ignoring visual and collision[0m
+[32m+ Adding part outer_tibia <1>[0m
+[32m- Adding part ankle_bearing_cover <1>[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 6804-2RS <1>[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 6802-2RS <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <2>[2m (configuration: List_INKdgXXdT7e5Nj=_140)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <3>[2m (configuration: List_INKdgXXdT7e5Nj=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <6>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part ankle_bearing_cover <2>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <1>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part nut M3 <2>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <8>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <12>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <2>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <6>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <1>[2m (configuration: List_INKdgXXdT7e5Nj=_140)[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [left_shaft_connector <1>][0m
+[32m- Adding part screw M2.5 <3>[2m (configuration: List_INKdgXXdT7e5Nj=_10)[2m / ignoring visual and collision[0m
+[32m+ Adding part inner_knee_pulley <1>[0m
+[32m- Adding part DIN-6325 3mm <1>[2m (configuration: List_QxFefFY61iTC1i=_6)[2m / ignoring visual and collision[0m
+[32m- Adding part ASC_alu <1>[2m / ignoring visual and collision[0m
+[32m- Adding part ASC_3 <1>[2m / ignoring visual and collision[0m
+[32m- Adding part DIN-6325 4mm <1>[2m (configuration: List_S0wynACseTs1mv=_14)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <4>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part ASC_2_mirror <1>[2m / ignoring visual and collision[0m
+[32m- Adding part nut M2.5 <2>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <3>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <2>[2m (configuration: List_INKdgXXdT7e5Nj=_25)[2m / ignoring visual and collision[0m
+[32m- Adding part ASC_1_mirror <1>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <4>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 6804-2RS <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <1>[2m (configuration: List_INKdgXXdT7e5Nj=_25)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <1>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part ASC_middle <1>[2m / ignoring visual and collision[0m
+[32m- Adding part ASC_alu <2>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <2>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part nut M2.5 <1>[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [ankle_shaft <1>][0m
+[32m+ Adding part shaft_end <2>[0m
+[32m- Adding part P210FM_plain_bearing <1>[2m / ignoring visual and collision[0m
+[32m- Adding part P210FM_plain_bearing <4>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <1>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m+ Adding part shaft_end <1>[0m
+[32m- Adding part P210FM_plain_bearing <3>[2m / ignoring visual and collision[0m
+[32m- Adding part P210FM_plain_bearing <2>[2m / ignoring visual and collision[0m
+[32m+ Adding part ankle_shaft <1>[0m
+[32m- Adding part screw M2.5 <2>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [left_ankle <1>][0m
+[32m- Adding part ankle_mirror <1>[2m / ignoring visual and collision[0m
+[32m- Adding part nut M2.5 <1>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <5>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <1>[2m (configuration: List_INKdgXXdT7e5Nj=_25)[2m / ignoring visual and collision[0m
+[32m- Adding part upper_foot_mirror <1>[2m / ignoring visual and collision[0m
+[32m- Adding part DIN-6325 4mm <1>[2m (configuration: List_S0wynACseTs1mv=_14)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <1>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 624-2Z <1>[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 624-2Z <2>[2m / ignoring visual and collision[0m
+[32m- Adding part nut M2.5 <3>[2m / ignoring visual and collision[0m
+[32m+ Adding part ankle_alu <1>[0m
+[32m- Adding part washer <6>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <2>[2m (configuration: List_INKdgXXdT7e5Nj=_25)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <2>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m+ Adding part ankle_alu <2>[0m
+[34m[1m* Adding top-level instance [left_foot <1>][0m
+[32m+ Adding part foot_alu <1>[0m
+[32m- Adding part lower_foot_mirror <1>[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [motor_pulley <2>][0m
+[32m- Adding part screw M3 <5>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part DIN-6325 3mm <1>[2m (configuration: List_QxFefFY61iTC1i=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <2>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <6>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <3>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <4>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m+ Adding part motor_pulley <1>[0m
+[32m- Adding part screw M3 <1>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [right_upper_hip <1>][0m
+[32m+ Adding part bearing_cover_1 <1>[0m
+[32m+ Adding part bearing_cover_1 <2>[0m
+[32m+ Adding part RMD_X6 <1>[0m
+[32m+ Adding part upper_hip_2 <1>[0m
+[32m+ Adding part upper_hip_4_mirror <1>[0m
+[32m+ Adding part upper_hip_3_mirror <1>[0m
+[32m+ Adding part upper_hip_1 <1>[0m
+[34m[1m* Adding top-level instance [motor_pulley <3>][0m
+[32m- Adding part screw M3 <3>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <4>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <6>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <2>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <5>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m+ Adding part motor_pulley <1>[0m
+[32m- Adding part screw M3 <1>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part DIN-6325 3mm <1>[2m (configuration: List_QxFefFY61iTC1i=_12)[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [right_lower_hip <1>][0m
+[32m+ Adding part inner_hip_mirror <1>[0m
+[32m+ Adding part RMD_X6 <1>[0m
+[34m[1m* Adding top-level instance [right_femur <1>][0m
+[32m- Adding part screw M2.5 <14>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <8>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <4>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 6804-2RS <2>[2m / ignoring visual and collision[0m
+[32m- Adding part femur_thread <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <21>[2m (configuration: List_INKdgXXdT7e5Nj=_10)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <10>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m+ Adding part inner_femur <1>[0m
+[32m- Adding part screw M2.5 <16>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <19>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <4>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <2>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <1>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m+ Adding part bearing_cover_2 <1>[0m
+[32m+ Adding part outer_femur <1>[0m
+[32m- Adding part washer <6>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <20>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <22>[2m (configuration: List_INKdgXXdT7e5Nj=_10)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <8>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <9>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <6>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <9>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <12>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <1>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m+ Adding part outer_hip <1>[0m
+[32m- Adding part screw M2.5 <17>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 6804-2RS <1>[2m / ignoring visual and collision[0m
+[32m- Adding part nut M3 <3>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <2>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m+ Adding part bearing_cover_1 <1>[0m
+[32m- Adding part washer <5>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <18>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m+ Adding part RMD_X6 <2>[0m
+[32m- Adding part nut M3 <2>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <10>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 6804-2RS <3>[2m / ignoring visual and collision[0m
+[32m- Adding part nut M3 <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <15>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <11>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part nut M3 <4>[2m / ignoring visual and collision[0m
+[32m- Adding part reinforcement_mirror <1>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <3>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part knee_shaft <1>[2m / ignoring visual and collision[0m
+[32m- Adding part motor_support <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <13>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <7>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <7>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[32m+ Adding part RMD_X6 <1>[0m
+[32m- Adding part screw M2.5 <3>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <5>[2m (configuration: List_INKdgXXdT7e5Nj=_5)[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [motor_pulley <5>][0m
+[32m- Adding part screw M3 <3>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part DIN-6325 3mm <1>[2m (configuration: List_QxFefFY61iTC1i=_12)[2m / ignoring visual and collision[0m
+[32m+ Adding part motor_pulley <1>[0m
+[32m- Adding part screw M3 <1>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <2>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <6>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <4>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <5>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [right_tibia <1>][0m
+[32m- Adding part nut M3 <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <1>[2m (configuration: List_INKdgXXdT7e5Nj=_12)[2m / ignoring visual and collision[0m
+[32m+ Adding part inner_tibia <1>[0m
+[32m- Adding part ankle_bearing_cover <2>[2m / ignoring visual and collision[0m
+[32m+ Adding part outer_knee_pulley <1>[0m
+[32m- Adding part screw M2.5 <5>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 6802-2RS <2>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <8>[2m (configuration: List_INKdgXXdT7e5Nj=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <7>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part half_inner_knee <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <12>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <10>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <5>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <3>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <2>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part nut M3 <2>[2m / ignoring visual and collision[0m
+[32m- Adding part nut M2.5 <3>[2m / ignoring visual and collision[0m
+[32m- Adding part DIN-6325 3mm <1>[2m (configuration: List_QxFefFY61iTC1i=_6)[2m / ignoring visual and collision[0m
+[32m- Adding part nut M2.5 <2>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <3>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <9>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <2>[2m (configuration: List_INKdgXXdT7e5Nj=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <4>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <9>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <11>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <1>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part half_inner_knee <2>[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 6802-2RS <1>[2m / ignoring visual and collision[0m
+[32m- Adding part nut M2.5 <1>[2m / ignoring visual and collision[0m
+[32m+ Adding part outer_tibia <1>[0m
+[32m- Adding part washer <6>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <8>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part ankle_bearing_cover <1>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <10>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <6>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m+ Adding part outer_knee_1_mirror <1>[0m
+[32m- Adding part washer <4>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part ankle_thread <1>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <11>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m+ Adding part outer_knee_2_mirror <1>[0m
+[34m[1m* Adding top-level instance [right_shaft_connector <1>][0m
+[32m- Adding part DIN-6325 3mm <1>[2m (configuration: List_QxFefFY61iTC1i=_6)[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 6804-2RS <1>[2m / ignoring visual and collision[0m
+[32m- Adding part DIN-6325 4mm <1>[2m (configuration: List_S0wynACseTs1mv=_14)[2m / ignoring visual and collision[0m
+[32m- Adding part ASC_2 <1>[2m / ignoring visual and collision[0m
+[32m- Adding part nut M2.5 <2>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <4>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <1>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part ASC_middle <1>[2m / ignoring visual and collision[0m
+[32m- Adding part ASC_alu <2>[2m / ignoring visual and collision[0m
+[32m- Adding part ASC_3 <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <1>[2m (configuration: List_INKdgXXdT7e5Nj=_25)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <2>[2m (configuration: List_INKdgXXdT7e5Nj=_25)[2m / ignoring visual and collision[0m
+[32m- Adding part nut M2.5 <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <3>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <3>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <2>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part DIN-6325 3mm <2>[2m (configuration: List_QxFefFY61iTC1i=_6)[2m / ignoring visual and collision[0m
+[32m- Adding part ASC_alu <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <4>[2m (configuration: List_INKdgXXdT7e5Nj=_10)[2m / ignoring visual and collision[0m
+[32m+ Adding part inner_knee_pulley <1>[0m
+[32m- Adding part ASC_1 <1>[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [ankle_shaft <2>][0m
+[32m+ Adding part shaft_end <2>[0m
+[32m- Adding part P210FM_plain_bearing <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <1>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part P210FM_plain_bearing <3>[2m / ignoring visual and collision[0m
+[32m+ Adding part shaft_end <1>[0m
+[32m- Adding part P210FM_plain_bearing <2>[2m / ignoring visual and collision[0m
+[32m+ Adding part ankle_shaft <1>[0m
+[32m- Adding part screw M2.5 <2>[2m (configuration: List_INKdgXXdT7e5Nj=_8)[2m / ignoring visual and collision[0m
+[32m- Adding part P210FM_plain_bearing <4>[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [right_ankle <1>][0m
+[32m- Adding part Bearing 624-2Z <1>[2m / ignoring visual and collision[0m
+[32m+ Adding part ankle_alu <2>[0m
+[32m- Adding part washer <2>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part upper_foot <1>[2m / ignoring visual and collision[0m
+[32m- Adding part Bearing 624-2Z <2>[2m / ignoring visual and collision[0m
+[32m+ Adding part ankle_alu <1>[0m
+[32m- Adding part ankle <1>[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <2>[2m (configuration: List_INKdgXXdT7e5Nj=_25)[2m / ignoring visual and collision[0m
+[32m- Adding part nut M3 <3>[2m / ignoring visual and collision[0m
+[32m- Adding part nut M3 <2>[2m / ignoring visual and collision[0m
+[32m- Adding part washer <4>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M2.5 <1>[2m (configuration: List_INKdgXXdT7e5Nj=_25)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <6>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[32m- Adding part DIN-6325 4mm <1>[2m (configuration: List_S0wynACseTs1mv=_14)[2m / ignoring visual and collision[0m
+[32m- Adding part washer <1>[2m (configuration: List_V2ctYln8bw3b3S=M3)[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [right_foot <1>][0m
+[32m+ Adding part foot_alu <1>[0m
+[32m- Adding part lower_foot <1>[2m / ignoring visual and collision[0m
+[34m[1m* Adding top-level instance [motor_pulley <6>][0m
+[32m- Adding part screw M3 <3>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m+ Adding part motor_pulley <1>[0m
+[32m- Adding part screw M3 <2>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <4>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <6>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <5>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part DIN-6325 3mm <1>[2m (configuration: List_QxFefFY61iTC1i=_12)[2m / ignoring visual and collision[0m
+[32m- Adding part screw M3 <1>[2m (configuration: List_PeWMsaYEhydxJo=_12)[2m / ignoring visual and collision[0m
+
+[1m* Writing URDF file[0m
